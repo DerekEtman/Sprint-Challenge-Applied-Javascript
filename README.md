@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    The Dom is a a cross platform LII that uses the HTML as a tree of objects.
+
 2. What is an event?
+
+    If a user does something or something changes on the website a DOM event will recognize those inputs (if told to do so) and will carry out an action
 
 3. What is an event listener?
 
+    Event LIstener waits and looks for a specific action. Upon that action, the event listener will procede with its method
+
 4. Why would we convert a NodeList into an Array?
 
+    You can use Array.from() Which makes makes an array from an object or existing array.
+
 5. What is a component?
+
+    Tiny blocks of code that can be reused through out the website
 
 ### Git Set up
 
