@@ -14,7 +14,7 @@ const addTopicTab = document.querySelector('.topics');
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics') 
 .then( (response) =>{
-    console.log(response);
+    // console.log(response);
 
     response.data.topics.forEach( topicItem => {
         let topicCard = topicBuilder(topicItem);
@@ -32,6 +32,12 @@ function topicBuilder(ele) {
     newTab.classList.add('tab');
 // set on page
     newTab.textContent = ele;
+//event listener for click and hover **** FINISH THIS*****
+    newTab.addEventListener('click', (clicked) =>{
+        clicked.newTab.classList.toggle('active-tab');
+    })
+
+//returning newTab
     return newTab;
 
 

@@ -44,6 +44,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
     You can use Array.from() Which makes makes an array from an object or existing array.
 
+
 5. What is a component?
 
     Tiny blocks of code that can be reused through out the website
