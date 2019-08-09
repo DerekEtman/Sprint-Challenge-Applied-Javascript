@@ -26,19 +26,33 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
 })
 
 function topicBuilder(ele) {
+
 //creating new elements
     const newTab = document.createElement('div');
+
 //class styling
     newTab.classList.add('tab');
+
+
+// Event Listeners
+    newTab.addEventListener('click', clickStyling);
+
+    function clickStyling(){
+        // console.log("click!");
+    newTab.classList.toggle('active-tab')
+    }    
+
 // set on page
     newTab.textContent = ele;
-//event listener for click and hover **** FINISH THIS*****
-    newTab.addEventListener('click', (clicked) =>{
-        clicked.newTab.classList.toggle('active-tab');
-    })
 
+//event listener for click and hover **** FINISH THIS*****
 //returning newTab
     return newTab;
 
 
 }
+
+
+// function tagTog() {
+
+// }

@@ -47,35 +47,35 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     bootstrapArray.map(bootData =>{
         // console.log("this is bootData:", bootData);
         let newCard = cardBuilder(bootData);
-        console.log("newBootCard:", newCard);
+        // console.log("newBootCard:", newCard);
         let newLocation = document.querySelector('.cards-container');
         newLocation.appendChild(newCard);
     })
     javascriptArray.map(bootData =>{
         // console.log("this is bootData:", bootData);
         let newCard = cardBuilder(bootData);
-        console.log("newBootCard:", newCard);
+        // console.log("newBootCard:", newCard);
         let newLocation = document.querySelector('.cards-container');
         newLocation.appendChild(newCard);
     })
     jqueryArray.map(bootData =>{
         // console.log("this is bootData:", bootData);
         let newCard = cardBuilder(bootData);
-        console.log("newBootCard:", newCard);
+        // console.log("newBootCard:", newCard);
         let newLocation = document.querySelector('.cards-container');
         newLocation.appendChild(newCard);
     })
     nodeArray.map(bootData =>{
         // console.log("this is bootData:", bootData);
         let newCard = cardBuilder(bootData);
-        console.log("newBootCard:", newCard);
+        // console.log("newBootCard:", newCard);
         let newLocation = document.querySelector('.cards-container');
         newLocation.appendChild(newCard);
     })
     technologyArray.map(bootData =>{
         // console.log("this is bootData:", bootData);
         let newCard = cardBuilder(bootData);
-        console.log("newBootCard:", newCard);
+        // console.log("newBootCard:", newCard);
         let newLocation = document.querySelector('.cards-container');
         newLocation.appendChild(newCard);
     })
