@@ -114,23 +114,25 @@ function cardBuilder(ele){
     let imgContainer = document.createElement('div');
     let imgSrc = document.createElement('img');
     let credit = document.createElement('span');
+
 // creating structure of the card
     card.appendChild(cardHeadline);
     card.appendChild(author);
         author.appendChild(imgContainer);
             imgContainer.appendChild(imgSrc);
         author.appendChild(credit);
+
 //attaching class lists
-    card.classList.add("cards", "cards-container");
+    card.classList.add("card");
     cardHeadline.classList.add('headline');
-    author.classList.add('headline');
+    author.classList.add('author');
     imgContainer.classList.add('img-container');
-    imgSrc.classList.add('img');
-    credit.classList.add('span');
+
 //setting to page
     cardHeadline.textContent = ele.headline;
     imgSrc.src = ele.authorPhoto;
     credit.textContent = ele.authorName;
+
 //return it!
 return card;
 }
